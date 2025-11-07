@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Multi-Agent System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <header class="header">
+                <h1>🤖 AWS Multi-Agent System</h1>
+                <p>Manage your AWS resources with natural language</p>
+            </header>
+
+            <div class="chat-container">
+                <div class="messages" id="messages">
+                    <div class="welcome">
+                        <h2>👋 Welcome to AWS Multi-Agent!</h2>
+                        <p style="font-size: 1.1rem; margin-bottom: 30px; color: #667eea;">I'm your AI-powered AWS assistant. Let's manage your cloud resources together!</p>
+                        <p style="font-weight: 600; color: #333; margin-bottom: 15px;">✨ Try asking me to:</p>
+                        <ul>
+                            <li>Create an EC2 instance</li>
+                            <li>List your S3 buckets</li>
+                            <li>Stop or terminate instances</li>
+                            <li>Create or delete S3 buckets</li>
+                        </ul>
+                        <p style="margin-top: 30px; color: #888; font-size: 0.95rem;">💡 Tip: You can use natural language! Just say "hi" to get started.</p>
+                    </div>
+                </div>
+
+                <div class="quick-commands">
+                    <button class="quick-btn" onclick="sendQuickCommand('list instances')">list instances</button>
+                    <button class="quick-btn" onclick="sendQuickCommand('list buckets')">list buckets</button>
+                    <button class="quick-btn" onclick="sendQuickCommand('create ec2 instance')">create ec2 instance</button>
+                    <button class="quick-btn" onclick="sendQuickCommand('create s3 bucket test-bucket-' + Date.now())">create test bucket</button>
+                </div>
+
+                <form class="input-form" id="chatForm">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        placeholder="Type your command..." 
+                        class="input"
+                        autocomplete="off"
+                    />
+                    <button type="submit" class="send-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
