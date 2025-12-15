@@ -7,7 +7,7 @@ Links:
 
 Youtube: 
 
-Report: 
+Report: https://docs.google.com/document/d/1XLSRa4whxHoxZoe-oDYYpWNul1L9hwTujFq7g09t5TY/edit?tab=t.0
 
 PPT: https://sjsu0-my.sharepoint.com/:p:/g/personal/chandinisaisri_uppuganti_sjsu_edu/IQDKHQMG5-BXT6Mv5cjo0Ju5AWJXYdkGAFNU9UFufsekCpU?e=N6fiGo
 
